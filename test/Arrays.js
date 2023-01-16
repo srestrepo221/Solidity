@@ -69,6 +69,11 @@ describe('Arrays', () => {
       expect(await contract.length()).to.equal(2) // preserves length
       expect(await contract.array(0)).to.equal(0) // resets to default value
 
+
+      //////////////
+      await contract.pop()
+      expect(await contract.length()).to.equal(1)
+
     })
   })
 

@@ -1,0 +1,16 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "Ownable",
+  "sourceName": "contracts/Inheritance.sol",
+  "abi": [
+    {
+      "inputs": [],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    }
+  ],
+  "bytecode": "0x6080604052348015600f57600080fd5b50336000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550603f80605d6000396000f3fe6080604052600080fdfea264697066735822122034a56c27a7a645575451265f6eea2e6f8a53093e32d6ccabe9234f651aff4e2264736f6c63430008090033",
+  "deployedBytecode": "0x6080604052600080fdfea264697066735822122034a56c27a7a645575451265f6eea2e6f8a53093e32d6ccabe9234f651aff4e2264736f6c63430008090033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

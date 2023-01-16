@@ -15,7 +15,7 @@ describe('Errors', () => {
       const Contract = await ethers.getContractFactory('Errors1')
       contract = await Contract.deploy()
 
-      // expect(contract.example1(11)).to.be.fulfilled
+      await expect(contract.example1(11)).to.be.fulfilled
 
       await expect(contract.example1(5)).to.be.reverted
       await expect(contract.example1(20)).to.be.fulfilled

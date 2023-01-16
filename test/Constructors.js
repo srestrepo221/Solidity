@@ -38,6 +38,7 @@ describe('Constructors', () => {
       const Contract = await ethers.getContractFactory('Constructors4')
       let contract = await Contract.deploy({ value: ether(1) })
       let balance = await ethers.provider.getBalance(contract.address)
+      expect(await contract.name()).to.equal('Example 4')
       expect(ethers.utils.formatEther(balance)).to.equal('1.0')
     })
   })

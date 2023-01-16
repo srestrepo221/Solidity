@@ -18,10 +18,20 @@ describe('Variables', () => {
   })
 
   describe('Example 2', () => {
-    it('domonstrates the constructor sets the state variable', async () => {
+    let contract
+
+    beforeEach(async () => {
       const Contract = await ethers.getContractFactory('Variables2')
-      let contract = await Contract.deploy('Example 2')
+      contract = await Contract.deploy('Example 2')
+    })
+
+    it('domonstrates the constructor sets the state variable', async () => {
       expect(await contract.name()).to.equal('Example 2')
+      })
+
+    it('has a function to set name2 & sets state variable a function', async () => {
+      await contract.setName2('setting name 2')
+      expect(await contract.name2()).to.equal('setting name 2')
     })
   })
 
@@ -90,7 +100,7 @@ describe('Variables', () => {
     it('demonstrates "block" global variable', async () => {
       let result = await contract.getBlockInfo()
       // Uncomment this to view return values in console
-      // console.log(result)
+      console.log(result)
     })
   })
 })

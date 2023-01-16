@@ -29,6 +29,12 @@ describe('Conditionals', () => {
       expect(await contract.checkNumber1(1)).to.equal(0)
       expect(await contract.checkNumber1(20)).to.equal(1)
       expect(await contract.checkNumber1(3000)).to.equal(2)
+      //////////////////////////////////////////////////////
+      expect(await contract.checkNumber2(50)).to.equal(2)
+      expect(await contract.checkNumber2(99)).to.equal(2)
+      expect(await contract.checkNumber2(100)).to.equal(3)
+      expect(await contract.checkNumber2(101)).to.equal(3)
+      //////////////////////////////////////////////////////
 
       expect(await contract.checkNumber2(1)).to.equal(0)
       expect(await contract.checkNumber2(6)).to.equal(1)

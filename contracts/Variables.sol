@@ -14,9 +14,14 @@ contract Variables1 {
 // Local variable uses underscore prefix naming convention
 contract Variables2 {
     string public name;
-
+    string public name2;
+    
     constructor(string memory _name) {
         name = _name;
+    }
+
+    function setName2(string memory _name2) public {
+        name2 = _name2; 
     }
 }
 
@@ -40,10 +45,10 @@ contract Variables3 {
 // Immutable can be set in constructor, but should not change
 contract Variables4 {
     string constant NAME = "Example 4";
-    address immutable OWNER;
+    address immutable OWNER; // owner is not set
 
     constructor() {
-        OWNER = msg.sender;
+        OWNER = msg.sender; // owner is deployer 
     }
 
     function name() public pure returns(string memory) {
@@ -68,16 +73,19 @@ contract Variables5 {
     }
 
     function pay() public payable {
-        payer = msg.sender;
-        origin = tx.origin;
-        amount = msg.value;
+        payer = msg.sender; //  sender of the message (current call)
+        origin = tx.origin; // tx means transaction
+        amount = msg.value; // wei value 
     }
-
+    // msg.value is only accessible if the function is payable
+    // tx.origin person who originated the transaction in the first place
+    // tx.origin (address): sender of the transaction (full call chain)
+    
     function getBlockInfo() public view returns(uint, uint, uint) {
         return(
             block.number,
-            block.timestamp,
-            block.chainid
+            block.timestamp, //epoch time
+            block.chainid // current blockchain you are connected to
         );
     }
 }

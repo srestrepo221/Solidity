@@ -26,8 +26,8 @@ describe('Types', () => {
       expect(await contract.myInt2()).to.equal(0)
       expect(await contract.myInt3()).to.equal(-1)
       expect(await contract.myInt4()).to.equal(1)
-      expect(await contract.myInt5()).to.equal(1)
-      expect(await contract.myInt6()).to.equal(1)
+      expect(await contract.myUInt5()).to.equal(1)
+      expect(await contract.myUInt6()).to.equal(1)
     })
 
     it('demonstrates string and bytes types', async () => {
