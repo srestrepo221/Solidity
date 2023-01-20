@@ -25,7 +25,7 @@ describe('Variables', () => {
       contract = await Contract.deploy('Example 2')
     })
 
-    it('domonstrates the constructor sets the state variable', async () => {
+    it('demonstrates the constructor sets the state variable', async () => {
       expect(await contract.name()).to.equal('Example 2')
       })
 
@@ -103,4 +103,29 @@ describe('Variables', () => {
       console.log(result)
     })
   })
+
+  /*
+  describe('Example 6 HW', () => {
+    let contract, contract2
+
+    beforeEach(async () => {
+      const Contract = await ethers.getContractFactory('Variables6')
+      contract = await Contract.deploy()
+      //const Contract2 = await ethers.getContractFactory('Caller')
+      //contract2 = await Contract.deploy()
+    })
+
+    it('contract2-Caller inherits from Variables 6, should have Name 3', async () => {
+      expect(await contract.name3()).to.equal('Name 3')
+      //expect(await contract2.name3()).to.equal('NewName3')
+    })
+
+  })
+  */
 })
+
+
+
+
+
+

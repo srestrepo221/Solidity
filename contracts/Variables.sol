@@ -113,3 +113,12 @@ contract Variables6 {
     // They *can* be inherited by another contract
     string public name4 = "Name 4";
 }
+/*
+contract Caller is Variables6 {
+    //string public newName = name3;
+    function getName() public returns(string memory){
+        return name3;
+    }
+}
+*/
+

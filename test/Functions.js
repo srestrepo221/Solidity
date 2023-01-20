@@ -54,7 +54,7 @@ describe('Functions', () => {
     let contract
 
     beforeEach(async () => {
-      const Contract = await ethers.getContractFactory('Functions3')
+      const Contract = await ethers.getContractFactory('Functions2')
       contract = await Contract.deploy()
     })
 

@@ -8,6 +8,8 @@ import "hardhat/console.sol";
 // Write function with arguments
 // Write functions without arguments
 contract Functions1 {
+    // No visibility
+    // Defaults to internal
     string name = "Example 1";
 
     function setName(string memory _name) public {

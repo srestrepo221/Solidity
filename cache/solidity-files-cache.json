@@ -75,8 +75,8 @@
       ]
     },
     "/Users/santiagorestrepo/code/solidity_intensive/contracts/Variables.sol": {
-      "lastModificationDate": 1673834148523,
-      "contentHash": "3d853f41f6b9fd06ba5e0e3bffbad7c3",
+      "lastModificationDate": 1674006599541,
+      "contentHash": "05da1e8e03b8a8fe1a0ae38e3a2903d0",
       "sourceName": "contracts/Variables.sol",
       "solcConfig": {
         "version": "0.8.9",
@@ -108,6 +108,7 @@
         "^0.8.0"
       ],
       "artifacts": [
+        "Caller",
         "Variables1",
         "Variables2",
         "Variables3",
@@ -467,8 +468,8 @@
       ]
     },
     "/Users/santiagorestrepo/code/solidity_intensive/contracts/Functions.sol": {
-      "lastModificationDate": 1668484438432,
-      "contentHash": "db9cae132adc154ac9717f31c1531ee1",
+      "lastModificationDate": 1673837796432,
+      "contentHash": "af3eb50cd761d9fc8f4ea93572e42505",
       "sourceName": "contracts/Functions.sol",
       "solcConfig": {
         "version": "0.8.9",

@@ -1,13 +1,20 @@
-# Sample Hardhat Project
+# Solidity Project Covering 
+-Arrays
+-Conditionals
+-Constructors
+-Enums
+-Ether
+-Events
+-Functions
+-Inheritance
+-Loops
+-Mappings
+-Operators
+-Structs
+-Time
+-Token
+-Types
+-Variables
+`npx hardhat test test/_______.js`
+Enter contract name you wish to test in the __ field above
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
-
-Try running some of the following tasks:
-
-```shell
-npx hardhat help
-npx hardhat test
-GAS_REPORT=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.js
-```
